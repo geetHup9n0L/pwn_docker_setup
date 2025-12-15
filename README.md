@@ -35,8 +35,13 @@ docker rm -f <pwn_dbg_container>
 ___
 To initialize `gdb-pwndbg` debugging with python script
 
-* First, enter:
+* exploit.py must have this header:
+```python
+context.terminal = ["tmux", "splitw", "-h"]
+```
+* Then enter:
 ```
 tmux
 ```
 * Then run the `exploit.py`
+* Exit with: `exit`
