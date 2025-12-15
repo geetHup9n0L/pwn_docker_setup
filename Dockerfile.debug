@@ -1,5 +1,4 @@
-FROM pwn_chall:latest
-# or FROM ubuntu:22.04 (depends on initial Dockerfile)
+FROM pwn_challenge (depends on initial Image)
 
 USER root
 
