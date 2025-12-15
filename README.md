@@ -7,6 +7,7 @@ docker build -t <pwn_challenge> .
 ```
 
 * Create `Dockerfile.debug`: (to extends the original built Image)
+  Dockerfile.debughttps://github.com/geetHup9n0L/pwn_docker_setup/blob/main/Dockerfile.debug
 
 * Build the debug image:
 ```c
