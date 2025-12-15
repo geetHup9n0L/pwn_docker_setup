@@ -1,4 +1,4 @@
-FROM <pwn_challenge> (depends on initial Image)
+FROM <pwn_challenge> (initial Docker image)
 
 USER root
 
@@ -11,14 +11,21 @@ RUN apt-get update && apt-get install -y \
     strace \
     ltrace \
     patchelf \
-    checksec \
-    vim
+    vim \
+    net-tools \
+    iputils-ping
 
-# install pwndbg
-RUN git clone https://github.com/pwndbg/pwndbg /opt/pwndbg \
- && cd /opt/pwndbg \
- && ./setup.sh
+RUN python3 -m pip install --upgrade pip && \
+    python3 -m pip install pwntools
 
-# restore original user
+RUN git clone https://github.com/pwndbg/pwndbg /opt/pwndbg && \
+    cd /opt/pwndbg && \
+    ./setup.sh && \
+    echo "source /opt/pwndbg/gdbinit.py" >> /etc/gdb/gdbinit
+
+RUN chown -R ctf:ctf /opt/pwndbg
+
+ENV PWNDBG_NO_AUTOUPDATE=1
+
 USER ctf
 WORKDIR /home/ctf
