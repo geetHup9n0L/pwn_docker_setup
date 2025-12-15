@@ -13,4 +13,8 @@
 <img width="812" height="50" alt="image" src="https://github.com/user-attachments/assets/5c3d5fb3-3edb-49c9-883a-45c4a3a166ce" />
 <img width="714" height="425" alt="image" src="https://github.com/user-attachments/assets/97c619ef-5e0a-4cb0-87b1-0d172d81a23c" />
 
+* build the extended image (dbg version):
+<img width="813" height="276" alt="image" src="https://github.com/user-attachments/assets/a4ac68d6-41a8-493e-aeed-e0498a11ad64" />
 
+* now we run the debug container:
+<img width="810" height="180" alt="image" src="https://github.com/user-attachments/assets/6366f63f-7af3-4745-8cc4-fa7b86aac2f0" />
