@@ -1,15 +1,18 @@
 # pwn_docker_setup
 Add pwn-raleted tools automatically to docker's container 
 ___
-* Duplicate original `Dockerfile`
+* Build the original `Dockerfile`:
+```c
+docker build -t <pwn_challenge> .
+```
 
-* Add `Dockerfile.debug` configuration to the duplicated `Dockerfile (2)`
+* Create `Dockerfile.debug`: (to extends the original built Image)
 
-* Build the Debug Image:
+* Build the debug image:
 ```c
 docker build -t pwn_dbg_challenge -f Dockerfile.debug .
 ```
-* Run the Debug Container:
+* Run the debug container:
 ```c
 docker run -it \
   --cap-add=SYS_PTRACE \
