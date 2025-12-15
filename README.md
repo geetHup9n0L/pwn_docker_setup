@@ -10,14 +10,16 @@ docker build -t <pwn_challenge> .
 
 * Build the debug image:
 ```c
-docker build -t pwn_dbg_challenge -f Dockerfile.debug .
+docker build -t <pwn_dbg_challenge> -f Dockerfile.debug .
 ```
 * Run the debug container:
 ```c
 docker run -it \
   --cap-add=SYS_PTRACE \
   --security-opt seccomp=unconfined \
-  --name pwn_dbg_container \
-  pwn_dbg_challenge \
+  --name <pwn_dbg_container> \
+  <pwn_dbg_challenge> \
   /bin/bash
 ```
+
+**Notes:** change value `<name>` to your own preferred names
