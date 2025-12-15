@@ -3,7 +3,7 @@ Add pwn-raleted tools automatically to docker's container
 ___
 * Duplicate original `Dockerfile`
 
-* Add `Dockerfile.debig` tools configuration to duplicated `Dockerfile (2)`
+* Add `Dockerfile.debug` configuration to the duplicated `Dockerfile (2)`
 
 * Build the Debug Image:
 ```c
