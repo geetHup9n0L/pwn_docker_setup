@@ -11,10 +11,14 @@
 
 * create a `Dockerfile.debug`:
 <img width="812" height="50" alt="image" src="https://github.com/user-attachments/assets/5c3d5fb3-3edb-49c9-883a-45c4a3a166ce" />
-<img width="714" height="425" alt="image" src="https://github.com/user-attachments/assets/97c619ef-5e0a-4cb0-87b1-0d172d81a23c" />
+<img width="715" height="541" alt="image" src="https://github.com/user-attachments/assets/bb14ea9a-7a9e-4a48-8108-92a43e27db97" />
+
 
 * build the extended image (dbg version):
-<img width="813" height="276" alt="image" src="https://github.com/user-attachments/assets/a4ac68d6-41a8-493e-aeed-e0498a11ad64" />
+<img width="815" height="308" alt="image" src="https://github.com/user-attachments/assets/7a67642b-03c1-4642-82a6-36d30c283e4b" />
 
 * now we run the debug container:
 <img width="810" height="180" alt="image" src="https://github.com/user-attachments/assets/6366f63f-7af3-4745-8cc4-fa7b86aac2f0" />
+
+* check gdb-pwndbg:
+<img width="814" height="402" alt="image" src="https://github.com/user-attachments/assets/68f9b1f6-6c0f-4233-bb3e-916dae0df1f3" />
