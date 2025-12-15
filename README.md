@@ -6,7 +6,7 @@ Build the Debug Image:
 docker build -t pwn_dbg_challenge -f Dockerfile.debug .
 ```
 Run the Debug Container:
-```
+```c
 docker run -it \
   --cap-add=SYS_PTRACE \
   --security-opt seccomp=unconfined \
