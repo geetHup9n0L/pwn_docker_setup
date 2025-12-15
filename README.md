@@ -23,5 +23,9 @@ docker run -it \
   <pwn_dbg_challenge> \
   /bin/bash
 ```
+* To delete container:
+```c
+docker rm -f <pwn_dbg_container>
+```
 
 **Notes:** change value `<name>` to your own preferred names
